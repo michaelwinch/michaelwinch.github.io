@@ -1,0 +1,90 @@
+/***** GLOBAL *****/
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Solway', serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/***** HEADER *****/
+
+header h1 {
+    margin-left: 1em;
+}
+
+header .underline {
+    height: 20px;
+    background-image: linear-gradient(to right, hsl(220, 100%, 65%), hsl(340, 100%, 65%));
+}
+
+
+/***** MAIN *****/
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+main section article, main section aside {
+    margin: 2em 1em;
+}
+
+main section:nth-of-type(2n) {
+    background-image: linear-gradient(to right, hsl(220, 100%, 65%), hsl(340, 100%, 65%));
+}
+
+main section:nth-of-type(2n) article {
+    background-color: hsla(0, 0%, 0%, 0.15);
+    padding: 2em;
+    color: hsla(0, 0%, 100%, 0.9);
+}
+
+
+/***** FOOTER *****/
+
+footer {
+    color: hsla(0, 0%, 100%, 0.9);
+    height: 100px;
+    background-image: linear-gradient(to top, hsl(220, 5%, 30%), hsl(220, 5%, 20%));
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer a {
+    color: hsla(0, 0%, 100%, 0.8);
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: hsla(0, 0%, 100%, 1);
+    cursor: pointer;
+}
